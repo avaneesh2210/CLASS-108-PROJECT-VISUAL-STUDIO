@@ -1,0 +1,125 @@
+ <!DOCTYPE html>
+
+<html>
+
+    <head>
+
+      <title>Emotion To Emoji</title>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+      <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+  
+    <body>
+
+      <div class="container"> 
+
+        <center> 
+
+          <h3 class="btn btn-info heading" style="font-size: 50px;">EMOTION TO EMOJI APP 
+
+            <br> 
+
+            <span style="font-size: 50px;">☝</span> 
+
+            <span style="font-size: 50px;">👌</span>
+
+             <span style="font-size: 50px;">👍</span>
+
+             <span style="font-size: 50px;">✌</span>
+
+             <span style="font-size: 50px;">🙏</span> 
+
+             <span style="font-size: 50px;">🤞</span> 
+
+            </h3> 
+
+            <br>
+
+            <br>
+
+            <p style="font-size: 50px; color: rebeccapurple">Take a selfie of a gesture to know its meaning 
+
+            <br> 
+
+            <p style="font-size: 30px; color: royalblue">The following gestures trained are trained in the model</p> 
+
+            <br> 
+
+            <span style="font-size: 50px;">✌</span> 
+
+            <span style="font-size: 50px;">👌</span>
+
+             <span style="font-size: 50px;">👍</span>
+
+            <br> 
+
+            </p> 
+
+            <div class="col-md-4 col-sm-12 col-xs-12"> 
+
+            <label style="font-size: 40px;">Webcam View - </label>
+
+            <div id="camera"></div> 
+
+            <br>
+
+            <br>
+
+            <button onclick="take_snapshot();" class="btn btn-warning">Capture Image</button> 
+
+            </div> 
+
+            <div class="col-md-4 col-sm-12 col-xs-12"> 
+
+            <label style="font-size: 50px;">Prediction 1 - </label>
+
+            <p style="font-size: 50px;" class="emotion_name" id="result_emotion_name"></p>
+
+            <p style="font-size: 50px;" class="emoji" id="update_emoji"></p>
+
+            <label style="font-size: 50px;">Prediction 2 - </label> 
+
+            <p class="emotion_name" id="result_emotion_name2" style="font-size: 50px;"></p>
+
+            <p class="emoji" id="update_emoji2" style="font-size: 50px;"></p>
+
+            </div> 
+
+            <div class="col-md-4 col-sm-12 col-xs-12"> 
+
+            <label style="font-size: 50px;">Snapshot - </label> 
+
+            <div id="result"></div> 
+
+            <br>
+            
+            <br>
+
+            <button onclick="check();" class="btn btn-success">Predict Emotion</button> 
+
+            </div> 
+
+            </center> 
+
+            </div> 
+
+            <script src="main.js"></script> 
+
+    </body>
+
+  </html>
+  
+   
